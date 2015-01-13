@@ -1,5 +1,5 @@
 #Front Page
-A simple, hackable reader for hackers.
+A simple, hackable frontpage for hackers.
 
 http://djyde.github.io/front
 
