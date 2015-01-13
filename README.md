@@ -15,12 +15,12 @@ Using jade helps customize easier. For example, if you don't care about `Hacker 
 
 **index.jade**
 ```jade
-	//- .pure-u-1-3.post
-	//-   .title Hacker News
-	//-   .block#hackernews
-	//-     ul
-	//-       a(v-repeat="lists", href="{{link}}", target="_blank")
-	//-         li {{title}}
+//- .pure-u-1-3.post
+//-   .title Hacker News
+//-   .block#hackernews
+//-     ul
+//-       a(v-repeat="lists", href="{{link}}", target="_blank")
+//-         li {{title}}
 ```
 
 **js/base.js**
@@ -39,6 +39,6 @@ Using jade helps customize easier. For example, if you don't care about `Hacker 
 // })
 ```
 
-Save and refresh the page, you will find that Hacker News block was removed.
+Save and refresh the page, you will find that **Hacker News** block was removed.
 
-To add a new block for your own or contribute, just refer to the source code and hack it.
+To add a new block for your own or for contribution, just refer to the source code and hack it.
