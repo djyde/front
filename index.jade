@@ -3,10 +3,68 @@ html
   head
     title Front
     link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
-    script(src="/js/vue.min.js")
-    script(src="/js/base.js")
+
 
     style.
-
+      body{
+        font-family: serif;
+        background-color: #F5F5F5;
+      }
+      .block{
+        max-height: 400px;
+        overflow: scroll;
+        padding: 12px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
+      .block ul{
+        margin: 0;
+        padding: 0;
+      }
+      .block li{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 12px;
+      }
+      .block li a{
+        text-decoration: none;
+        color: #000;
+        display: block;
+      }
+      .title{
+        font-size: 24px;
+        margin: 0;
+        margin-left: 12px;
+        padding: 0;
+        padding-left: 8px;
+        border-left: 4px solid red;
+        border-bottom: 0;
+        margin-bottom: 16px;
+      }
+      .block .desc{
+        color: gray;
+        font-size: 8px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
   body
-    h1 Front
+    h1(style="text-align: center") Front Page
+    //- .desc(style="text-align: center") The frontpage of your everyday.
+    .pure-g
+      .pure-u-1-3
+        .title Hacker News
+        .block#hackernews
+          ul
+            li(v-repeat="lists")
+              a(href="{{url}}") {{title}}
+      .pure-u-1-3
+        .title 36Kr Next
+        .block#next
+          ul
+            li(v-repeat="lists")
+              a(href="{{link}}") {{title}}
+              p.desc {{description}}
+                      
+      .pure-u-1-3
+  script(src="js/vue.min.js")
+  script(src="js/qwest.min.js")
+  script(src="js/base.js")
