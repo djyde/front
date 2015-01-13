@@ -55,17 +55,24 @@ html
         font-size: .8em;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       }
+      .container{
+        width: 80%;
+        margin: 0 auto;
+      }
+      .post{
+        margin-bottom: 28px;
+      }
   body
     h1(style="text-align: center; padding: 24px;") Front Page
-    .pure-g
-      .pure-u-1-3
+    .pure-g.container
+      .pure-u-1-3.post
         .title Hacker News
         .block#hackernews
           ul
             a(v-repeat="lists", href="{{link}}", target="_blank")
               li {{title}}
 
-      .pure-u-1-3
+      .pure-u-1-3.post
         .title 36Kr Next
         .block#next
           ul
@@ -73,12 +80,20 @@ html
               li {{title}}
               p.desc {{description}}
                       
-      .pure-u-1-3
+      .pure-u-1-3.post
         .title V2EX
         .block#v2ex
           ul
             a(v-repeat="lists", href="{{link}}", target="_blank")
               li {{title}}
+
+      .pure-u-1-3.post
+        .title 开发者头条
+        .block#toutiao
+          ul
+            a(v-repeat="lists", href="{{link}}", target="_blank")
+              li {{title}}
+              p.desc {{author.name}}
   script(src="js/vue.min.js")
   script(src="js/qwest.min.js")
   script(src="js/base.js")

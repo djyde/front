@@ -36,3 +36,16 @@ var v2ex = new Vue({
     }]
   }
 })
+
+//toutiao
+qwest.get('http://node-read.avosapps.com/toutiao').then(function(res){
+  toutiao.lists = JSON.parse(res);
+})
+var toutiao = new Vue({
+  el: '#toutiao',
+  data: {
+    lists: [{
+      title: 'loading...'
+    }]
+  }
+})
