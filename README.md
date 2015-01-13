@@ -48,3 +48,6 @@ Using jade helps customize easier. For example, if you don't care about `Hacker 
 Save and refresh the page, you will find that **Hacker News** block was removed.
 
 To add a new block for your own or for contribution, just refer to the source code and hack it.
+
+#Lincense
+Just hack it.
