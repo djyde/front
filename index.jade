@@ -7,13 +7,12 @@ html
     style.
       body{
         font-family: serif;
-        background-color: #F5F5F5;
       }
       .block{
-        max-height: 400px;
+        height: 400px;
         overflow: scroll;
-        padding: 12px;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        margin: 12px;
       }
       .block ul{
         margin: 0;
@@ -25,12 +24,16 @@ html
         padding: 0;
         margin-bottom: 12px;
       }
-      .block li a{
+      .block a{
         text-decoration: none;
         color: #000;
         display: block;
+        padding: 8px;
       }
-      .block li a:visited{
+      .block a:hover{
+        background-color: #F5F5F5;
+      }
+      .block a:visited{
         color: gray;
       }
       .title{
@@ -55,23 +58,23 @@ html
         .title Hacker News
         .block#hackernews
           ul
-            li(v-repeat="lists")
-              a(href="{{link}}", target="_blank") {{title}}
+            a(v-repeat="lists", href="{{link}}", target="_blank")
+              li {{title}}
 
       .pure-u-1-3
         .title 36Kr Next
         .block#next
           ul
-            li(v-repeat="lists")
-              a(href="{{link}}", target="_blank") {{title}}
+            a(v-repeat="lists", href="{{link}}", target="_blank")
+              li {{title}}
               p.desc {{description}}
                       
       .pure-u-1-3
         .title V2EX
         .block#v2ex
           ul
-            li(v-repeat="lists")
-              a(href="{{link}}", target="_blank") {{title}}
+            a(v-repeat="lists", href="{{link}}", target="_blank")
+              li {{title}}
   script(src="js/vue.min.js")
   script(src="js/qwest.min.js")
   script(src="js/base.js")
