@@ -4,11 +4,11 @@ html
     title Front
     link(rel="stylesheet", href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css")
     meta(name="charset", content="utf-8")
+
     style.
       body{
         font-family: serif;
       }
-
       .block{
         height: 400px;
         overflow: scroll;
@@ -62,6 +62,7 @@ html
       .post{
         margin-bottom: 28px;
       }
+
   body
     h1(style="text-align: center; padding: 24px;") Front Page
     .pure-g.container
@@ -94,6 +95,7 @@ html
             a(v-repeat="lists", href="{{link}}", target="_blank")
               li {{title}}
               p.desc {{author.name}}
+
   script(src="js/vue.min.js")
   script(src="js/qwest.min.js")
   script(src="js/base.js")
