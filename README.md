@@ -9,6 +9,12 @@ Front Page is easily to be hacked and make you own reader. But you need to handl
 * [Jade](http://jade-lang.com) - Template engine.
 * [Vue.js](http://vuejs.org) - A lightweight MVVM library.
 
+To have your own frontpage, just:
+
+* Fork this repo
+* Create branch `gh-pages`
+* Wating for a while && visit http://yourid.github.io/front
+
 The main files of Front Page is `index.jade` and `js/base.js`.
 
 Using jade helps customize easier. For example, if you don't care about `Hacker News`, you only need to comment out the relevent code(e.g. `command + /` in Sublime) in `index.jade` and `js/base.js` to remove it.
