@@ -7,14 +7,12 @@ html
     meta(charset="utf-8")
 
     style.
-      body{
-        font-family: serif;
-      }
       .block{
         height: 400px;
-        overflow: scroll;
+        overflow-y: scroll;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         margin: 12px;
+        background-color: #F5F5F5;
       }
       .block p{
         margin: 0 !important;
@@ -33,49 +31,59 @@ html
         text-decoration: none;
         color: #000;
         display: block;
-        padding: 8px;
-      }
-      .block a:hover{
-        background-color: #F5F5F5;
-      }
-      .block a:visited{
-        color: gray;
-      }
-      .title{
-        font-size: 24px;
-        margin: 0;
-        margin-left: 12px;
-        padding: 0;
-        padding-left: 8px;
-        border-left: 4px solid red;
-        border-bottom: 0;
-        margin-bottom: 16px;
+        padding: 10px 8px;
       }
       .block .desc{
         color: gray;
         font-size: .8em;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       }
+      .block a:hover{
+        background-color: red;
+        color: #FFFFFF;
+      }
+      .block a:hover .desc{
+        color: #F5F5F5;
+      }
+      .block a:visited{
+        color: gray;
+      }
+      .block::-webkit-scrollbar{
+        background-color: #DDD;
+        width: 4px;
+      }
+      .block::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 0, 0, 0.5);
+      }
+      .title{
+        font-size: 24px;
+        margin: 0;
+        margin-left: 12px;
+        margin-bottom: 16px;
+      }
       .container{
         width: 80%;
         margin: 0 auto;
       }
       .post{
-        margin-bottom: 28px;
+        margin-bottom: 30px;
       }
       .slogan{
-        text-align: center;
         font-size: 1em;
-        margin-bottom: 24px;
+        margin-bottom: 30px;
       }
       .slogan a{
         text-decoration: none;
         color: #000;
       }
+      .text-center{
+        text-align: center;
+      }
   body
-    h1(style="text-align: center;") Front Page
-    .slogan 
-      a(href="https://github.com/djyde/front") Hackable frontpage for hackers.
+    .text-center
+      h1 Front Page
+      .slogan 
+        a(href="https://github.com/djyde/front") Hackable frontpage for hackers.
     .pure-g.container
       .pure-u-1.pure-u-md-1-2.pure-u-lg-1-3.post
         .title Hacker News
