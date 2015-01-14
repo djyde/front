@@ -1,0 +1,22 @@
+{
+  "name": "front",
+  "version": "0.0.1",
+  "homepage": "https://github.com/djyde/front",
+  "authors": [
+    "randypriv@gmail.com"
+  ],
+  "description": "A simple, hackable frontpage for hackers",
+  "main": ["index.html", "js/base.js"],
+  "keywords": [
+    "front",
+    "hacker"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
