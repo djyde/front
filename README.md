@@ -12,7 +12,8 @@ Front Page is easily to be hacked and make you own reader. But you need to handl
 To have your own frontpage, just:
 
 * Fork this repo
-* Create branch `gh-pages`
+* Run `bower install`
+* Checkout `gh-pages` && merge
 * Wating for a while && visit http://yourid.github.io/front
 
 The main files of Front Page is `index.jade` and `js/base.js`.
