@@ -1,0 +1,36 @@
+{
+  "name": "qwest",
+  "description": "Ajax library with XHR2, promises and requests limitation",
+  "main": "src/qwest.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pyrsmk/qwest.git"
+  },
+  "keywords": [
+    "ajax",
+    "request",
+    "promises",
+    "xhr"
+  ],
+  "authors": [
+    "Aurélien Delogu"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pyrsmk/qwest/issues"
+  },
+  "homepage": "http://dreamysource.fr/product/qwest",
+  "ignore": [
+    ".git"
+  ],
+  "version": "1.5.4",
+  "_release": "1.5.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.5.4",
+    "commit": "434037d0d80976c15f03ef9f7241bc2f69038219"
+  },
+  "_source": "git://github.com/pyrsmk/qwest.git",
+  "_target": "~1.5.4",
+  "_originalSource": "qwest"
+}
