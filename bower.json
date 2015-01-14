@@ -6,7 +6,10 @@
     "randypriv@gmail.com"
   ],
   "description": "A simple, hackable frontpage for hackers",
-  "main": ["index.html", "js/base.js"],
+  "main": [
+    "index.html",
+    "js/base.js"
+  ],
   "keywords": [
     "front",
     "hacker"
@@ -18,5 +21,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "vue": "~0.11.4"
+  }
 }
