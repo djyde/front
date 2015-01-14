@@ -23,6 +23,7 @@
     "tests"
   ],
   "dependencies": {
-    "vue": "~0.11.4"
+    "vue": "~0.11.4",
+    "qwest": "~1.5.4"
   }
 }
