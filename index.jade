@@ -85,12 +85,14 @@ html
       .slogan 
         a(href="https://github.com/djyde/front") Hackable frontpage for hackers.
     .pure-g.container
+      
       .pure-u-1.pure-u-md-1-2.pure-u-lg-1-3.post
-        .title Hacker News
-        .block#hackernews
+        .title 稀土·掘金
+        .block#xitugold
           ul
             a(v-repeat="lists", href="{{link}}", target="_blank")
               li {{title}}
+              p.desc {{description}}
 
       .pure-u-1.pure-u-md-1-2.pure-u-lg-1-3.post
         .title 36Kr Next
@@ -103,6 +105,13 @@ html
       .pure-u-1.pure-u-md-1-2.pure-u-lg-1-3.post
         .title V2EX
         .block#v2ex
+          ul
+            a(v-repeat="lists", href="{{link}}", target="_blank")
+              li {{title}}
+
+      .pure-u-1.pure-u-md-1-2.pure-u-lg-1-3.post
+        .title Hacker News
+        .block#hackernews
           ul
             a(v-repeat="lists", href="{{link}}", target="_blank")
               li {{title}}

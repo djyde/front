@@ -49,3 +49,17 @@ var toutiao = new Vue({
     }]
   }
 })
+
+//xitugold
+qwest.get('http://node-read.avosapps.com/xitugold').then(function(res){
+  xitugold.lists = JSON.parse(res);
+  console.log(JSON.parse(res))
+})
+var xitugold = new Vue({
+  el: '#xitugold',
+  data: {
+    lists: [{
+      title: 'loading...'
+    }]
+  }
+})
